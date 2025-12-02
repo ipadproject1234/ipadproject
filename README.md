@@ -24,19 +24,23 @@ cmake ..
 ```
 (.. means directory above)
 
+
 # Compile automatically with Make
 
-If CMakeLists.txt contains a file and you have an up to date Makefile, you should be able to compile.
+If CMakeLists.txt contains a file and you have an up to date Makefile, you should be able to compile it.
 Navigate to the build directory and run the following:
 ```
 make
 ```
 this will make executables for all files included in CMakeLists.txt.
 
+
 To delete all generated executables, run the following command:
 ```
 make clean
 ```
+
+# Running
 
 running executable(in build directory)  
 ```
