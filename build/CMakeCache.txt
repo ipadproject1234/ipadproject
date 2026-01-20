@@ -237,6 +237,18 @@ pkgcfg_lib_GTK4_pangocairo-1.0:FILEPATH=/usr/lib/libpangocairo-1.0.so
 //Path to a library.
 pkgcfg_lib_GTK4_vulkan:FILEPATH=/usr/lib/libvulkan.so
 
+//Path to a library.
+pkgcfg_lib_POPPLER_cairo:FILEPATH=/usr/lib/libcairo.so
+
+//Path to a library.
+pkgcfg_lib_POPPLER_glib-2.0:FILEPATH=/usr/lib/libglib-2.0.so
+
+//Path to a library.
+pkgcfg_lib_POPPLER_gobject-2.0:FILEPATH=/usr/lib/libgobject-2.0.so
+
+//Path to a library.
+pkgcfg_lib_POPPLER_poppler-glib:FILEPATH=/usr/lib/libpoppler-glib.so
+
 //Value Computed by CMake
 test_BINARY_DIR:STATIC=/home/ella/school/innovationsprojekt/documentReader/build
 
@@ -262,7 +274,7 @@ CMAKE_CACHE_MAJOR_VERSION:INTERNAL=4
 //Minor version of cmake used to create the current loaded cache
 CMAKE_CACHE_MINOR_VERSION:INTERNAL=2
 //Patch version of cmake used to create the current loaded cache
-CMAKE_CACHE_PATCH_VERSION:INTERNAL=0
+CMAKE_CACHE_PATCH_VERSION:INTERNAL=1
 //ADVANCED property for variable: CMAKE_COLOR_MAKEFILE
 CMAKE_COLOR_MAKEFILE-ADVANCED:INTERNAL=1
 //Path to CMake executable.
@@ -425,8 +437,45 @@ GTK4_gtk4_VERSION:INTERNAL=
 PKG_CONFIG_ARGN-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: PKG_CONFIG_EXECUTABLE
 PKG_CONFIG_EXECUTABLE-ADVANCED:INTERNAL=1
+POPPLER_CFLAGS:INTERNAL=-I/usr/include/poppler/glib;-I/usr/include/cairo;-I/usr/include;-I/usr/include/pixman-1;-I/usr/include/glib-2.0;-I/usr/lib/glib-2.0/include;-I/usr/include/libmount;-I/usr/include/blkid;-I/usr/include/sysprof-6;-pthread;-I/usr/include/poppler;-I/usr/include/freetype2;-I/usr/include/nss;-I/usr/include/nspr;-I/usr/include/openjpeg-2.5;-I/usr/include/libpng16;-I/usr/include/webp
+POPPLER_CFLAGS_I:INTERNAL=
+POPPLER_CFLAGS_OTHER:INTERNAL=-pthread
+POPPLER_FOUND:INTERNAL=1
+POPPLER_INCLUDEDIR:INTERNAL=/usr/include
+POPPLER_INCLUDE_DIRS:INTERNAL=/usr/include/poppler/glib;/usr/include/cairo;/usr/include;/usr/include/pixman-1;/usr/include/glib-2.0;/usr/lib/glib-2.0/include;/usr/include/libmount;/usr/include/blkid;/usr/include/sysprof-6;/usr/include/poppler;/usr/include/freetype2;/usr/include/nss;/usr/include/nspr;/usr/include/openjpeg-2.5;/usr/include/libpng16;/usr/include/webp
+POPPLER_LDFLAGS:INTERNAL=-L/usr/lib;-lpoppler-glib;-lcairo;-lgobject-2.0;-lglib-2.0
+POPPLER_LDFLAGS_OTHER:INTERNAL=
+POPPLER_LIBDIR:INTERNAL=/usr/lib
+POPPLER_LIBRARIES:INTERNAL=poppler-glib;cairo;gobject-2.0;glib-2.0
+POPPLER_LIBRARY_DIRS:INTERNAL=/usr/lib
+POPPLER_LIBS:INTERNAL=
+POPPLER_LIBS_L:INTERNAL=
+POPPLER_LIBS_OTHER:INTERNAL=
+POPPLER_LIBS_PATHS:INTERNAL=
+POPPLER_MODULE_NAME:INTERNAL=poppler-glib
+POPPLER_PREFIX:INTERNAL=/usr
+POPPLER_STATIC_CFLAGS:INTERNAL=-I/usr/include/poppler/glib;-I/usr/include/cairo;-I/usr/include;-I/usr/include/pixman-1;-I/usr/include/glib-2.0;-I/usr/lib/glib-2.0/include;-I/usr/include/libmount;-I/usr/include/blkid;-I/usr/include/sysprof-6;-pthread;-I/usr/include/poppler;-I/usr/include/freetype2;-I/usr/include/nss;-I/usr/include/nspr;-I/usr/include/openjpeg-2.5;-I/usr/include/libpng16;-I/usr/include/webp;-DXML_STATIC;-DCURL_STATICLIB;-DOPJ_STATIC;-DLZMA_API_STATIC
+POPPLER_STATIC_CFLAGS_I:INTERNAL=
+POPPLER_STATIC_CFLAGS_OTHER:INTERNAL=-pthread;-DXML_STATIC;-DCURL_STATICLIB;-DOPJ_STATIC;-DLZMA_API_STATIC
+POPPLER_STATIC_INCLUDE_DIRS:INTERNAL=/usr/include/poppler/glib;/usr/include/cairo;/usr/include;/usr/include/pixman-1;/usr/include/glib-2.0;/usr/lib/glib-2.0/include;/usr/include/libmount;/usr/include/blkid;/usr/include/sysprof-6;/usr/include/poppler;/usr/include/freetype2;/usr/include/nss;/usr/include/nspr;/usr/include/openjpeg-2.5;/usr/include/libpng16;/usr/include/webp
+POPPLER_STATIC_LDFLAGS:INTERNAL=-L/usr/lib;-lpoppler-glib;-lcairo;-lm;-ldl;-lXext;-lXrender;-lX11;-lpthread;-lxcb-render;-lxcb-shm;-lxcb;-lXau;-lXdmcp;-lpixman-1;-lm;-lgio-2.0;-lgobject-2.0;-lffi;-lgmodule-2.0;-pthread;-lglib-2.0;-latomic;-lm;-pthread;-lpcre2-8;-lpthread;-lmount;-lblkid;-lsysprof-capture-4;-Wl,-z,nodelete;-pthread;-lpoppler;-lfontconfig;-pthread;-lm;-lfreetype;-ldl;-lbz2;-lexpat;-lm;-lcurl;-lssh2;-lssl;-lcrypto;-lcrypto;-lz;-lidn2;-L/usr/lib;-lunistring;-lbrotlidec;-lbrotlicommon;-lgssapi_krb5;-lkrb5;-lk5crypto;-lcom_err;-lkrb5support;-lssl;-lpsl;-lssh2;-L/usr/lib;-lssl;-L/usr/lib;-L/usr/lib;-lz;-lcrypto;-ldl;-pthread;-lnghttp2;-lnghttp3;-lssl3;-lsmime3;-lnss3;-lnssutil3;-lplds4;-lplc4;-lnspr4;-lgpgmepp;-lgpgme;-lassuan;-lgpg-error;-lopenjp2;-lm;-llcms2;-lm;-lpthread;-lpng16;-lm;-lm;-ltiff;-ljbig;-lm;-lz;-ldeflate;-ljpeg;-llzma;-pthread;-lpthread;-lzstd;-lwebp;-lm;-lsharpyuv;-lm
+POPPLER_STATIC_LDFLAGS_OTHER:INTERNAL=-pthread;-pthread;-Wl,-z,nodelete;-pthread;-pthread;-pthread;-pthread
+POPPLER_STATIC_LIBDIR:INTERNAL=
+POPPLER_STATIC_LIBRARIES:INTERNAL=poppler-glib;cairo;m;dl;Xext;Xrender;X11;pthread;xcb-render;xcb-shm;xcb;Xau;Xdmcp;pixman-1;m;gio-2.0;gobject-2.0;ffi;gmodule-2.0;glib-2.0;atomic;m;pcre2-8;pthread;mount;blkid;sysprof-capture-4;poppler;fontconfig;m;freetype;dl;bz2;expat;m;curl;ssh2;ssl;crypto;crypto;z;idn2;unistring;brotlidec;brotlicommon;gssapi_krb5;krb5;k5crypto;com_err;krb5support;ssl;psl;ssh2;ssl;z;crypto;dl;nghttp2;nghttp3;ssl3;smime3;nss3;nssutil3;plds4;plc4;nspr4;gpgmepp;gpgme;assuan;gpg-error;openjp2;m;lcms2;m;pthread;png16;m;m;tiff;jbig;m;z;deflate;jpeg;lzma;pthread;zstd;webp;m;sharpyuv;m
+POPPLER_STATIC_LIBRARY_DIRS:INTERNAL=/usr/lib;/usr/lib;/usr/lib;/usr/lib;/usr/lib
+POPPLER_STATIC_LIBS:INTERNAL=
+POPPLER_STATIC_LIBS_L:INTERNAL=
+POPPLER_STATIC_LIBS_OTHER:INTERNAL=
+POPPLER_STATIC_LIBS_PATHS:INTERNAL=
+POPPLER_VERSION:INTERNAL=25.12.0
+POPPLER_poppler-glib_INCLUDEDIR:INTERNAL=
+POPPLER_poppler-glib_LIBDIR:INTERNAL=
+POPPLER_poppler-glib_PREFIX:INTERNAL=
+POPPLER_poppler-glib_VERSION:INTERNAL=
 __pkg_config_arguments_GTK4:INTERNAL=REQUIRED;gtk4
+__pkg_config_arguments_POPPLER:INTERNAL=REQUIRED;poppler-glib
 __pkg_config_checked_GTK4:INTERNAL=1
+__pkg_config_checked_POPPLER:INTERNAL=1
 //ADVANCED property for variable: pkgcfg_lib_GTK4_cairo
 pkgcfg_lib_GTK4_cairo-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: pkgcfg_lib_GTK4_cairo-gobject
@@ -451,5 +500,13 @@ pkgcfg_lib_GTK4_pango-1.0-ADVANCED:INTERNAL=1
 pkgcfg_lib_GTK4_pangocairo-1.0-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: pkgcfg_lib_GTK4_vulkan
 pkgcfg_lib_GTK4_vulkan-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: pkgcfg_lib_POPPLER_cairo
+pkgcfg_lib_POPPLER_cairo-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: pkgcfg_lib_POPPLER_glib-2.0
+pkgcfg_lib_POPPLER_glib-2.0-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: pkgcfg_lib_POPPLER_gobject-2.0
+pkgcfg_lib_POPPLER_gobject-2.0-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: pkgcfg_lib_POPPLER_poppler-glib
+pkgcfg_lib_POPPLER_poppler-glib-ADVANCED:INTERNAL=1
 prefix_result:INTERNAL=/usr/lib
 
