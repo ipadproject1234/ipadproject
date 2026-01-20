@@ -179,6 +179,7 @@ static void app_activate(GApplication *app){
 
     homeScreen(NULL, window);
 
+    gtk_window_fullscreen(GTK_WINDOW(window));
     gtk_window_present(GTK_WINDOW(window));
 }
 
