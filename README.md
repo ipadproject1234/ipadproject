@@ -1,3 +1,8 @@
+# Library
+
+libpoppler-glib-dev
+gtk4
+
 # Commands
 
 Command to run in code directory on ipad to pull latest version from github  
