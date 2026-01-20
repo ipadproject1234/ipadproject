@@ -1,6 +1,7 @@
 # Library
 
-libpoppler-glib-dev 
+libpoppler-glib-dev  
+
 gtk4
 
 # Commands
