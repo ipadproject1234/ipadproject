@@ -1,3 +1,0 @@
-/home/ella/school/innovationsprojekt/documentReader/build/CMakeFiles/main.dir
-/home/ella/school/innovationsprojekt/documentReader/build/CMakeFiles/edit_cache.dir
-/home/ella/school/innovationsprojekt/documentReader/build/CMakeFiles/rebuild_cache.dir
