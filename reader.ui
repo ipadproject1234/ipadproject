@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+    <object id="overlay" class="GtkOverlay">
+        <property name="child">
+            <object id="scrolledWindow" class="GtkScrolledWindow">
+                <property name="vexpand">True</property>
+                <property name="hexpand">True</property>
+                <property name="vscrollbar-policy">automatic</property>
+                <property name="hscrollbar-policy">automatic</property>
+                <child>
+                    <object id="drawingArea" class="GtkDrawingArea">
+                    </object>
+                </child>
+            </object>
+        </property>
+        <child type="overlay">
+            <object id="allFilesButton" class="GtkButton">
+                <property name="label">Back</property>
+                <property name="halign">start</property>
+                <property name="valign">start</property>
+                <property name="margin-start">15</property>
+                <property name="margin-top">15</property>
+            </object>
+        </child>
+    </object>
+</interface>

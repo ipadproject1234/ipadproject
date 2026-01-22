@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+  <object id="home_grid" class="GtkGrid">
+    <property name="column-homogeneous">True</property>
+    <property name="row-homogeneous">True</property>
+    <child>
+      <object id="filesButton" class="GtkButton">
+        <property name="label">All files</property>
+        <layout>
+          <property name="column">0</property>
+          <property name="row">0</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object id="helpButton" class="GtkButton">
+        <property name="label">Help</property>
+        <layout>
+          <property name="column">1</property>
+          <property name="row">0</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object id="optionsButton" class="GtkButton">
+        <property name="label">Options</property>
+        <layout>
+          <property name="column">2</property>
+          <property name="row">0</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object id="addButton" class="GtkButton">
+        <property name="label">Add new folder</property>
+        <layout>
+          <property name="column">0</property>
+          <property name="row">1</property>
+        </layout>
+      </object>
+    </child>
+  </object>
+</interface>

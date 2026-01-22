@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+    <object id="scrolledWindow" class="GtkScrolledWindow">
+        <property name="vexpand">True</property>
+        <property name="hexpand">True</property>
+        <child>
+            <object id="box" class="GtkBox">
+                <property name="homogeneous">True</property>
+                <child>
+                    <object id="homeButton" class="GtkButton">
+                        <property name="label">Home</property>
+                    </object>
+                </child>
+                <child>
+                    <object id="addFileButton" class="GtkButton">
+                        <property name="label">Add new file</property>
+                    </object>
+                </child>
+                <child>
+                    <object id="deleteFileButton" class="GtkButton">
+                        <property name="label">Delete file</property>
+                    </object>
+                    <object id="testPdfButton" class="GtkButton">
+                        <property name="label">testpdf.pdf</property>
+                    </object>
+                </child>
+            </object>
+        </child>
+    </object>
+</interface>
