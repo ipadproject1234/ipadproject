@@ -1,5 +1,6 @@
 #include <gtk/gtk.h>
 #include <poppler.h>
+#include <unistd.h>
 
 #include "home.h"
 #include "allFiles.h"
@@ -30,6 +31,7 @@ void reader(GtkButton *btn, GtkWidget *window){
     PopplerPage *page;
     double page_width, page_height;
     char uri[512];
+    char path[512];
 
     builder = gtk_builder_new();
     if(gtk_builder_add_from_file(builder, "../reader.ui", &error) == 0){
@@ -39,7 +41,10 @@ void reader(GtkButton *btn, GtkWidget *window){
     }
 
     fileName = gtk_button_get_label(btn);
-    sprintf(uri, "file:///home/ella/school/innovationsprojekt/documentReader/files/%s", fileName);
+    realpath("../files", path);
+    sprintf(uri, "file://%s/%s", path, fileName);
+    printf("uri : %s\n", uri);
+
 
     document = poppler_document_new_from_file(uri, NULL, NULL);
     if (document == NULL) {
